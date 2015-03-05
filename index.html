@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>FLY-EMIR-ATS</title>
+	<script src="jQuery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="5-8-3.js"></script>	
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link href="5-8-3.css" rel="stylesheet">
+</head>
+<body>
+ <style>
+	#draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+	#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; margin-left: 880px; }
+	fieldset {
+		border: 0;
+	}
+	label {
+		display: block;
+	}
+	select {
+		width: 50px;
+	}
+	.overflow {
+		height: 200px;
+	}
+</style>
+<div id="titulo"><h1>Welcome to our company, FLY-EMIR-ATS!</h1></div>
+
+
+<!-- Datepicker -->
+<div id="calendario">
+	<p><h2>Select the day to fly</h2></p>
+	<p class="fecha">Going :<input type="text" name="date" id="date"></p>
+	<p class="fecha">Return :<input type="text" name="date" id="date1"></p>
+	<p><fieldset>
+		<label for="partida">From</label>
+		<select id="partida">
+		<optgroup label="departures">
+		<option>Madrid</option>
+		<option>New York</option>
+		<option>London</option>
+		<option>Barcelona</option>
+		<option>Dubai</option>
+		<option>Tokio</option>
+		<option>Bucarest</option>
+		<option>Oslo</option>
+		<option>Boston</option>
+		<option>Miami</option>
+		<option>Buenos Aires</option>
+		<option>Rio de Janeiro</option>
+		</optgroup>
+		</select>
+
+		<label for="destinos">To</label>
+		<select id="destinos">
+		<optgroup label="destinations">
+		<option>Madrid</option>
+		<option>New York</option>
+		<option>London</option>
+		<option>Barcelona</option>
+		<option>Dubai</option>
+		<option>Tokio</option>
+		<option>Bucarest</option>
+		<option>Oslo</option>
+		<option>Boston</option>
+		<option>Miami</option>
+		<option>Buenos Aires</option>
+		<option>Rio de Janeiro</option>
+		</optgroup>
+		</select>
+
+		<label for="number">Number of passenger</label>
+		<select name="number" id="number">
+		<option selected="selected">0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		</select>
+	</fieldset></p>
+	<button>Confirm</button>
+</div>
+<div id="accordion">
+	<h3>Quienes somos</h3>
+	<div>
+	<p>
+	Somos la mayor empresa aérea y de vuelo que existe en EUROPA Y ASIA, ampliando fronteras hasta AMÉRICA en
+	los últimos años.
+	</p>
+	</div>
+	<h3>Personal</h3>
+	<div>
+	<p>
+	El personal mas exigente y profesional totalmente a disposición de nuestros clientes, tanto pilotos y azafat@s en el avión, como personal de restauración y staff en el aeropuerto.
+	</p>
+	</div>
+	<h3>Aviones</h3>
+	<div>
+	<p>
+	Contamos con la mayor flota aérea que jamás puedas imaginar. Los mejores aviones puestos a punto para llevar a todas las personas lo más cómodo y rápido, para que su vuelo sea siempre recordado.
+	</p>
+	</div>
+	<h3>Destinos</h3>
+	<div>
+	<p>
+	Deja de soñar. Ahora puedes alcanzar todos tus sueños volando hasta los lugares más remotos del mundo.
+	Nosotros te llevaremos. Algunos de nuestros destinos son:
+	</p>
+	<p>
+		<ul>
+			<li>TOKYO</li>
+			<li>NEW YORK</li>
+			<li>DUBAI</li>
+		</ul>
+	</p>
+	</div>
+</div>
+<ul id="menu">
+	<li>Tikects</li>
+	<li>Timetable</li>
+	<li>discounts
+		<ul>
+		<li>Groups</li>
+		<li>Children</li>
+		</ul>
+	</li>
+</ul>
+
+
+<div id="draggable" class="ui-widget-content">
+</div>
+
+<div id="droppable" class="ui-widget-header">
+	<p>Arrastra hasta aqui el avión y descubre la oferta del mes que
+		tenemos preparada para ti</p>
+</div>
+
+</body>
+</html>

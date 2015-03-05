@@ -1,0 +1,36 @@
+body{
+	background-image: url("images/avion.jpg");
+	background-size: 1300px 800px;
+}
+
+#titulo{
+	width:700px;
+	margin-left:300px;
+	font-family: cursive;
+}
+
+#calendario{
+	background: #F5F5DC;
+	width: 210px;
+}
+
+#accordion{
+	width: 980px;
+	margin-left: 210px;
+	margin-top: -295px;
+	opacity: 0.9;
+}
+
+#partida , #destinos{
+		width: 110px;
+}
+
+.ui-menu {
+	width: 210px;
+	margin-top: -85px;
+}
+
+#draggable{
+	background-image: url("images/avionpeq.jpg");
+	background-size: 115px 120px;
+}
